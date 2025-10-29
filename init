@@ -1,0 +1,533 @@
+local Player = game:GetService("Players").LocalPlayer
+
+local sigmauiii = Instance.new("ScreenGui")
+sigmauiii.Name = "sigmauiii"
+sigmauiii.Parent = game.CoreGui
+
+    local sigmaloader = Instance.new("Frame")
+    sigmaloader.Name = "sigmaloader"
+    sigmaloader.Size = UDim2.new(0.234375, 0, 0.18535681068897247, 0)
+    sigmaloader.Position = UDim2.new(0.5, 0, 0.5, 0)
+    sigmaloader.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    sigmaloader.BackgroundTransparency = 0.20000000298023224
+    sigmaloader.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    sigmaloader.BorderSizePixel = 0
+    sigmaloader.AnchorPoint = Vector2.new(0.5, 0.5)
+
+        local UICorner = Instance.new("UICorner")
+        UICorner.Parent = sigmaloader
+
+        local title = Instance.new("TextLabel")
+        title.Name = "title"
+        title.Size = UDim2.new(1, 0, 0.376259446144104, 0)
+        title.Position = UDim2.new(0, 0, -0.001259765587747097, 0)
+        title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        title.BackgroundTransparency = 1
+        title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        title.BorderSizePixel = 0
+        title.Text = "loading plz wait !!11!!"
+        title.TextColor3 = Color3.fromRGB(255, 255, 255)
+        title.TextSize = 36
+        title.Font = Enum.Font.FredokaOne
+        title.TextWrapped = true
+        title.AnchorPoint = Vector2.new(0, 0)
+        title.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+        title.Parent = sigmaloader
+
+        local proof = Instance.new("TextLabel")
+        proof.Name = "proof"
+        proof.Size = UDim2.new(1, 0, 0.24500000476837158, 0)
+        proof.Position = UDim2.new(0, 0, 0.7512975931167603, 0)
+        proof.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        proof.BackgroundTransparency = 1
+        proof.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        proof.BorderSizePixel = 0
+        proof.Text = "loading proof: theres none"
+        proof.TextColor3 = Color3.fromRGB(100, 100, 100)
+        proof.TextSize = 24
+        proof.Font = Enum.Font.FredokaOne
+        proof.TextWrapped = true
+        proof.AnchorPoint = Vector2.new(0, 0)
+        proof.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+        proof.Parent = sigmaloader
+
+    sigmaloader.Parent = sigmauiii
+
+    local sidebar = Instance.new("Frame")
+    sidebar.Name = "sidebar"
+    sidebar.Size = UDim2.new(0.078125, 0, 1, 0)
+    sidebar.Position = UDim2.new(1.2000000476837158, 0, 0, 0)
+    sidebar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    sidebar.BackgroundTransparency = 0.20000000298023224
+    sidebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    sidebar.BorderSizePixel = 0
+    sidebar.AnchorPoint = Vector2.new(0, 0)
+
+        local UICorner_2 = Instance.new("UICorner")
+        UICorner_2.Parent = sidebar
+
+        local UIListLayout = Instance.new("UIListLayout")
+        UIListLayout.Parent = sidebar
+		UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+		UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+        local updates = Instance.new("ImageButton")
+        updates.Name = "updates"
+        updates.Size = UDim2.new(0.8333333134651184, 0, 0.11584800481796265, 0)
+        updates.Position = UDim2.new(0, 0, 0, 0)
+        updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        updates.BackgroundTransparency = 1
+        updates.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        updates.BorderSizePixel = 0
+        updates.Image = "rbxassetid://111910307073387"
+        updates.ImageColor3 = Color3.fromRGB(255, 255, 255)
+        updates.AnchorPoint = Vector2.new(0, 0)
+        updates.ImageRectOffset = Vector2.new(0, 0)
+        updates.ImageRectSize = Vector2.new(0, 0)
+        updates.SliceCenter = Rect.new(0, 0, 0, 0)
+
+            local UICorner_3 = Instance.new("UICorner")
+            UICorner_3.Parent = updates
+        updates.Parent = sidebar
+
+        local onlinescripts = Instance.new("ImageButton")
+        onlinescripts.Name = "onlinescripts"
+        onlinescripts.Size = UDim2.new(0.8333333134651184, 0, 0.11584800481796265, 0)
+        onlinescripts.Position = UDim2.new(0, 0, 0, 0)
+        onlinescripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        onlinescripts.BackgroundTransparency = 1
+        onlinescripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        onlinescripts.BorderSizePixel = 0
+        onlinescripts.Image = "rbxassetid://9940320365"
+        onlinescripts.ImageColor3 = Color3.fromRGB(255, 255, 255)
+        onlinescripts.AnchorPoint = Vector2.new(0, 0)
+        onlinescripts.ImageRectOffset = Vector2.new(0, 0)
+        onlinescripts.ImageRectSize = Vector2.new(0, 0)
+        onlinescripts.SliceCenter = Rect.new(0, 0, 0, 0)
+
+            local UICorner_4 = Instance.new("UICorner")
+            UICorner_4.Parent = onlinescripts
+        onlinescripts.Parent = sidebar
+
+        local editor = Instance.new("ImageButton")
+        editor.Name = "editor"
+        editor.Size = UDim2.new(0.8333333134651184, 0, 0.11584800481796265, 0)
+        editor.Position = UDim2.new(0, 0, 0, 0)
+        editor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        editor.BackgroundTransparency = 1
+        editor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        editor.BorderSizePixel = 0
+        editor.Image = "rbxassetid://114127804740858"
+        editor.ImageColor3 = Color3.fromRGB(255, 255, 255)
+        editor.AnchorPoint = Vector2.new(0, 0)
+        editor.ImageRectOffset = Vector2.new(0, 0)
+        editor.ImageRectSize = Vector2.new(0, 0)
+        editor.SliceCenter = Rect.new(0, 0, 0, 0)
+
+            local UICorner_5 = Instance.new("UICorner")
+            UICorner_5.Parent = editor
+        editor.Parent = sidebar
+
+    sidebar.Parent = sigmauiii
+
+    local tabs = Instance.new("Frame")
+    tabs.Name = "tabs"
+    tabs.Size = UDim2.new(1, 0, 1, 0)
+    tabs.Position = UDim2.new(0, 0, 0, 0)
+    tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    tabs.BackgroundTransparency = 1
+    tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    tabs.BorderSizePixel = 0
+    tabs.AnchorPoint = Vector2.new(0, 0)
+
+        local updates_2 = Instance.new("Frame")
+        updates_2.Name = "updates"
+        updates_2.Size = UDim2.new(0.375, 0, 0.4819277226924896, 0)
+        updates_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+        updates_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        updates_2.BackgroundTransparency = 0.20000000298023224
+        updates_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        updates_2.BorderSizePixel = 0
+        updates_2.Visible = false
+        updates_2.AnchorPoint = Vector2.new(0.5, 0.5)
+
+            local UICorner_6 = Instance.new("UICorner")
+            UICorner_6.Parent = updates_2
+
+            local updates_3 = Instance.new("ScrollingFrame")
+            updates_3.Name = "updates"
+            updates_3.Size = UDim2.new(1, 0, 0.9038461446762085, 0)
+            updates_3.Position = UDim2.new(0, 0, 0.09615384787321091, 0)
+            updates_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            updates_3.BackgroundTransparency = 1
+            updates_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            updates_3.BorderSizePixel = 0
+            updates_3.AnchorPoint = Vector2.new(0, 0)
+            updates_3.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+            updates_3.Active = true
+
+                local UIListLayout_2 = Instance.new("UIListLayout")
+                UIListLayout_2.Parent = updates_3
+
+            local title_2 = Instance.new("TextLabel")
+            title_2.Name = "title"
+            title_2.Size = UDim2.new(1, 0, 0.09615384787321091, 0)
+            title_2.Position = UDim2.new(0, 0, 0, 0)
+            title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            title_2.BackgroundTransparency = 1
+            title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            title_2.BorderSizePixel = 0
+            title_2.Text = "UPDATES"
+            title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+            title_2.TextSize = 14
+            title_2.Font = Enum.Font.FredokaOne
+            title_2.TextScaled = true
+            title_2.TextWrapped = true
+            title_2.AnchorPoint = Vector2.new(0, 0)
+            title_2.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+            title_2.Parent = updates_2
+        updates_2.Parent = tabs
+
+        local editor_2 = Instance.new("Frame")
+        editor_2.Name = "editor"
+        editor_2.Size = UDim2.new(0.375, 0, 0.4819277226924896, 0)
+        editor_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+        editor_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        editor_2.BackgroundTransparency = 0.20000000298023224
+        editor_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        editor_2.BorderSizePixel = 0
+        editor_2.Visible = false
+        editor_2.AnchorPoint = Vector2.new(0.5, 0.5)
+
+            local UICorner_7 = Instance.new("UICorner")
+            UICorner_7.Parent = editor_2
+
+            local title_3 = Instance.new("TextLabel")
+            title_3.Name = "title"
+            title_3.Size = UDim2.new(1, 0, 0.09615384787321091, 0)
+            title_3.Position = UDim2.new(0, 0, 0, 0)
+            title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            title_3.BackgroundTransparency = 1
+            title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            title_3.BorderSizePixel = 0
+            title_3.Text = "EDITOR"
+            title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+            title_3.TextSize = 14
+            title_3.Font = Enum.Font.FredokaOne
+            title_3.TextScaled = true
+            title_3.TextWrapped = true
+            title_3.AnchorPoint = Vector2.new(0, 0)
+            title_3.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+            title_3.Parent = editor_2
+
+            local executenorm = Instance.new("TextButton")
+            executenorm.Name = "executenorm"
+            executenorm.Size = UDim2.new(0.4000000059604645, 0, 0.09615384787321091, 0)
+            executenorm.Position = UDim2.new(0.02500000037252903, 0, 0.8673076629638672, 0)
+            executenorm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+            executenorm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            executenorm.BorderSizePixel = 0
+            executenorm.Text = "Execute Script"
+            executenorm.TextColor3 = Color3.fromRGB(255, 255, 255)
+            executenorm.TextSize = 36
+            executenorm.Font = Enum.Font.FredokaOne
+            executenorm.TextWrapped = true
+            executenorm.AnchorPoint = Vector2.new(0, 0)
+            executenorm.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+
+                local UICorner_8 = Instance.new("UICorner")
+                UICorner_8.Parent = executenorm
+            executenorm.Parent = editor_2
+
+            local executeclip = Instance.new("TextButton")
+            executeclip.Name = "executeclip"
+            executeclip.Size = UDim2.new(0.4000000059604645, 0, 0.09615384787321091, 0)
+            executeclip.Position = UDim2.new(0.5722222328186035, 0, 0.8673076629638672, 0)
+            executeclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+            executeclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            executeclip.BorderSizePixel = 0
+            executeclip.Text = "Execute Clipboard"
+            executeclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+            executeclip.TextSize = 36
+            executeclip.Font = Enum.Font.FredokaOne
+            executeclip.TextWrapped = true
+            executeclip.AnchorPoint = Vector2.new(0, 0)
+            executeclip.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+
+                local UICorner_9 = Instance.new("UICorner")
+                UICorner_9.Parent = executeclip
+            executeclip.Parent = editor_2
+
+            local codescroll = Instance.new("ScrollingFrame")
+            codescroll.Name = "codescroll"
+            codescroll.Size = UDim2.new(0.9472222328186035, 0, 0.7115384340286255, 0)
+            codescroll.Position = UDim2.new(0.02500000037252903, 0, 0.09600000083446503, 0)
+            codescroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            codescroll.BackgroundTransparency = 1
+            codescroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            codescroll.BorderSizePixel = 0
+            codescroll.AnchorPoint = Vector2.new(0, 0)
+            codescroll.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+            codescroll.Active = true
+
+                local styled = Instance.new("TextLabel")
+                styled.Name = "styled"
+                styled.Size = UDim2.new(1, 0, 1, 0)
+                styled.Position = UDim2.new(0, 0, 0, 0)
+                styled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                styled.BackgroundTransparency = 1
+                styled.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                styled.BorderSizePixel = 0
+                styled.Text = "print(\"Hello World!\")"
+                styled.TextColor3 = Color3.fromRGB(255, 255, 255)
+                styled.TextSize = 24
+                styled.Font = Enum.Font.FredokaOne
+                styled.TextWrapped = true
+                styled.AnchorPoint = Vector2.new(0, 0)
+                styled.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+				styled.TextYAlignment = Enum.TextYAlignment.Top
+				styled.TextXAlignment = Enum.TextXAlignment.Left
+                styled.Parent = codescroll
+
+                local code = Instance.new("TextBox")
+                code.Name = "code"
+                code.Size = UDim2.new(1, 0, 1, 0)
+                code.Position = UDim2.new(0, 0, 0, 0)
+                code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                code.BackgroundTransparency = 1
+                code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                code.BorderSizePixel = 0
+                code.Text = "print(\"Hello World!\")"
+                code.TextColor3 = Color3.fromRGB(0, 0, 0)
+                code.TextSize = 14
+                code.Font = Enum.Font.SourceSans
+                code.TextWrapped = true
+                code.AnchorPoint = Vector2.new(0, 0)
+                code.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                code.TextTransparency = 1
+				code.TextYAlignment = Enum.TextYAlignment.Top
+				code.TextXAlignment = Enum.TextXAlignment.Left
+                code.Parent = codescroll
+            codescroll.Parent = editor_2
+        editor_2.Parent = tabs
+    tabs.Parent = sigmauiii
+
+-- ========== COROUTINES MOVED TO END ==========
+
+-- Loader animation coroutine
+coroutine.wrap(function()
+    local parent4 = sigmaloader
+    local f = parent4
+    local originalColor = f.BackgroundColor3
+    local lighter = originalColor:Lerp(Color3.new(.4, .4, .4), 0.2)
+    local originalSize = f.Size
+    local targetSize = UDim2.new(0, 0, 0, 0)
+
+    parent4.Parent.sidebar.Position = UDim2.new(1.2,0,0,0)
+
+    local steps = 20
+    local delay = 0.02
+
+    local function expoOut(x)
+        return 1 - 2^(-10 * x)
+    end
+
+    for i = 1, 2 do
+        for t = 1, steps do
+            f.BackgroundColor3 = originalColor:Lerp(lighter, t/steps)
+            wait(delay)
+        end
+        for t = steps, 1, -1 do
+            f.BackgroundColor3 = originalColor:Lerp(lighter, t/steps)
+            wait(delay)
+        end
+    end
+
+    for t = 1, steps-19 do
+        local alpha = t / steps
+        f.Size = originalSize:Lerp(targetSize, expoOut(alpha))
+        wait(delay)
+    end
+    f.Visible = false
+    game.TweenService:Create(parent4.Parent.sidebar, TweenInfo.new(1, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {Position = UDim2.new(0.922,0,0,0)}):Play()
+    task.wait(1)
+    f:Destroy()
+end)()
+
+-- Sidebar button functionality coroutine
+coroutine.wrap(function()
+    local parent3 = sidebar
+    local TweenService = game:GetService("TweenService")
+
+    for _, button in ipairs(parent3:GetChildren()) do
+        if button:IsA("ImageButton") then
+            button.MouseButton1Click:Connect(function()
+                local tabs = parent3.Parent.tabs
+                local targetTab = tabs:FindFirstChild(button.Name)
+                if not targetTab then return end
+
+                if targetTab.Visible then
+                    local closeTween = TweenService:Create(targetTab, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+                        Position = targetTab.Position + UDim2.new(0, 0, 0, 1000)
+                    })
+                    closeTween:Play()
+                    closeTween.Completed:Wait()
+                    targetTab.Visible = false
+                else
+                    for _, tab in ipairs(tabs:GetChildren()) do
+                        if tab:IsA("Frame") and tab.Visible then
+                            tab.Visible = false
+                        end
+                    end
+
+                    targetTab.Position = UDim2.new(0.5,0,0.5,0) - UDim2.new(0,0,0,50)
+                    targetTab.Visible = true
+
+                    local openTween = TweenService:Create(targetTab, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+                        Position = targetTab.Position + UDim2.new(0, 0, 0, 50)
+                    })
+                    openTween:Play()
+                end
+            end)
+        end
+    end
+end)()
+
+-- Updates fetching coroutine
+coroutine.wrap(function()
+    local parent = updates_3
+    local result = game:HttpGet("https://raw.githubusercontent.com/stealware/skidlife/refs/heads/main/updates")
+
+    local t = {}
+    for line in result:gmatch("[^\r\n]+") do
+        table.insert(t, line)
+    end
+
+    for i = 1, #t do
+        local label = Instance.new("TextLabel", parent)
+        label.BackgroundTransparency = 1
+        label.BorderSizePixel = 0
+        label.Text = t[i]
+        label.Size = UDim2.new(1, 0, 0, 50)
+        label.TextColor3 = Color3.new(1,1,1)
+        label.TextSize = 24
+        label.Font = Enum.Font.FredokaOne
+    end
+end)()
+
+-- Code syntax highlighting coroutine
+coroutine.wrap(function()
+    local parent2 = editor_2
+    local code = parent2.codescroll.code
+    local styled = parent2.codescroll.styled
+    styled.RichText = true
+    styled.TextWrapped = true
+
+    local COLORS = {
+        comment = "rgb(106,153,85)",
+        string  = "rgb(230,219,116)",
+        func    = "rgb(249,38,114)",
+        keyword = "rgb(102,217,239)",
+        text    = "rgb(248,248,242)"
+    }
+
+    local keywords = {
+        ["local"]=true, ["function"]=true, ["if"]=true, ["then"]=true,
+        ["end"]=true, ["for"]=true, ["while"]=true, ["do"]=true, ["return"]=true
+    }
+
+    local function escapeRichText(s)
+        return s:gsub("&","&amp;"):gsub("<","&lt;"):gsub(">","&gt;")
+    end
+
+    local function highlightCode(text)
+        text = escapeRichText(text)
+        local result = ""
+        local i = 1
+        local len = #text
+
+        while i <= len do
+            local c = text:sub(i,i)
+
+            if c == "-" and text:sub(i,i+1) == "--" then
+                local comment = text:match("^(%-%-.-)\n?", i) or text:sub(i)
+                result = result.."<font color='"..COLORS.comment.."'>"..comment.."</font>"
+                i = i + #comment
+
+            elseif c == '"' or c == "'" then
+                local quote = c
+                local j = i+1
+                while j <= len do
+                    local ch = text:sub(j,j)
+                    if ch == "\\" then
+                        j = j + 2
+                    elseif ch == quote then
+                        break
+                    else
+                        j = j + 1
+                    end
+                end
+                local str = text:sub(i, math.min(j,len))
+                result = result.."<font color='"..COLORS.string.."'>"..str.."</font>"
+                i = math.min(j+1,len+1)
+
+            elseif text:sub(i):match("^%w+%s*%(") then
+                local fnNameWithParen = text:match("^(%w+%s*%()", i)
+                if fnNameWithParen then
+                    result = result.."<font color='"..COLORS.func.."'>"..fnNameWithParen.."</font>"
+                    i = i + #fnNameWithParen
+
+                    local parens = 1
+                    local argsStart = i
+                    while i <= len and parens > 0 do
+                        local ch = text:sub(i,i)
+                        if ch == "(" then
+                            parens = parens + 1
+                        elseif ch == ")" then
+                            parens = parens - 1
+                        end
+                        i = i + 1
+                    end
+
+                    local argsEnd = i-2
+                    if argsEnd >= argsStart then
+                        local args = text:sub(argsStart, argsEnd)
+                        result = result..highlightCode(args)
+                    end
+
+                    result = result.."<font color='"..COLORS.func.."'>"..")" .."</font>"
+                end
+
+            else
+                local word = text:match("^(%w+)", i)
+                if word and keywords[word] then
+                    result = result.."<font color='"..COLORS.keyword.."'>"..word.."</font>"
+                    i = i + #word
+                else
+                    result = result..c
+                    i = i + 1
+                end
+            end
+        end
+
+        return result
+    end
+
+	styled.Text = highlightCode(code.Text)
+	code:GetPropertyChangedSignal("Text"):Connect(function()
+		styled.Text = highlightCode(code.Text)
+	end)
+
+	executenorm.MouseButton1Click:Connect(function()
+		loadstring(code.Text)()
+	end)
+	executeclip.MouseButton1Click:Connect(function()
+		print("No work :c")
+	end)
+end)()
+getgenv().identifyexecutor = function()
+	return "SkidLife v1.0.0"
+end
+getgenv().printidentity = function()
+	print("Current identity is 0")
+end
